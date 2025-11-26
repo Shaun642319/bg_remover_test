@@ -26,7 +26,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --noconsole --onefile --icon=resources/app.ico main.py
+          pyinstaller --noconsole --onefile --icon=resources/app.ico app.py
 
       - name: Upload artifact (EXE)
         uses: actions/upload-artifact@v4
